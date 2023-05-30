@@ -1,0 +1,67 @@
+.container {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+  max-height: 600ox;
+  margin-top: 300px;
+  background: linear-gradient(hsl(240, 15%, 42%), rgb(23, 23, 36));
+}
+.text p {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+.ratingButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ratingButtons button {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.ratingButtons button:hover {
+  background-color: orange;
+}
+
+.ratingButtons button.active {
+  background-color: grey;
+}
+
+.submitButton {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 30px;
+}
+
+.submitButton:hover {
+  background-color: white;
+  color: orange;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
