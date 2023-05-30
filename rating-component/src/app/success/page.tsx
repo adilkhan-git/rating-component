@@ -5,7 +5,10 @@ import thankLogo from "../../../public/illustration-thank-you.svg";
 import { useRouter } from "next/navigation";
 
 export default function Success() {
-  const rating = localStorage.getItem("rating");
+  let rating;
+  if (typeof window !== "undefined") {
+    rating = localStorage.getItem("rating");
+  }
   const router = useRouter();
 
   return (
@@ -18,7 +21,7 @@ export default function Success() {
         <p>Thank You!</p>
         <p>
           We appreciate you taking the time to give a rating. If you ever need
-          more support, don't hesitate to get in touch!
+          more support, dont hesitate to get in touch!
         </p>
       </div>
       <div>
